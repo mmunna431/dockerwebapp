@@ -4,7 +4,7 @@ services:
  devopsdb:
    image: mmunna431/dockerproject:dbimage
    ports:
-     - "3307:3306"
+     - "3306:3306"
 
  application:
    image: mmunna431/dockerproject:appimage
