@@ -2,13 +2,13 @@
 version: "3"
 services:
  devopsdb:
-   image: shaikmustafa/mynewapp:dbimage
+   image: mmunna431/dockerproject:dbimage
    ports:
-     - "3306:3306"
+     - "3307:3306"
 
  application:
-   image: shaikmustafa/mynewapp:appimage
+   image: mmunna431/dockerproject:appimage
    ports:
-     - "1111:8080"
+     - "2345:8080"
    depends_on:
      - "devopsdb"
